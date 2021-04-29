@@ -1,4 +1,4 @@
-# DevEd Learning-Labs
+# DevEd LearningLabs
 LearningLabs is an experimental project created for Shark-a-Hack 2021-q1, the internal hackaton from DigitalOcean.
 This is a space for experimentation in alternative ways to present educational content we have in our community website.
 
@@ -10,6 +10,8 @@ To run LearningLabs locally, you'll need a development environment with the foll
 - PHP 7.4+ (cli only)
 - [Composer](https://getcomposer.org)
 
+This can be accomplished with the Docker setup that is included in the repository. In this case, you'll need to have Docker and Docker Compose installed locally.
+
 Start by cloning this repository:
 
 ```shell
@@ -17,12 +19,24 @@ git clone https://github.com/do-community/learning-labs
 cd learning-labs
 ```
 
-Then run `composer install` to install the PHP dependencies:
+If you are running LearningLabs with Docker, you should get your environment up and running now with:
 
 ```shell
-composer install
+docker-compose up -d
+```
+Then run `composer install` to install the PHP dependencies. 
+
+### With Docker Compose
+```command
+docker-compose exec app composer install
 ```
 
+Then you can access the application from your browser at `localhost:8000`.
+
+### With a local PHP server
+```command
+composer install
+```
 Then, you can run the built-in PHP web server with:
 
 ```shell
@@ -30,6 +44,8 @@ php -S 0.0.0.0:8000 -t web/
 ```
 
 You can now access the application from your browser at `localhost:8000`.
+
+### Customizing Layouts
 
 To customize the views, you'll need to be able to compile CSS assets and that requires `npm` running on your development environment. Otherwise you won't have access to all that Tailwind has to offer!
 
