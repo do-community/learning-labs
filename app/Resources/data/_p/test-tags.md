@@ -7,7 +7,7 @@ cover_image: https://picsum.photos/780/300?r=6
 Content goes here. This page might take a bit longer to load because of all the embeds (:
 
 ## Audio Embed Test
-{% audio /audio/test_cafe.mp3 %}
+{% audio /audio/ansible.mp3 %}
 
 ## Video Embed Test
 {% video /video/test.mp4 %}

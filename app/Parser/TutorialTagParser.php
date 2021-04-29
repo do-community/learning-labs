@@ -18,13 +18,14 @@ class TutorialTagParser implements CustomTagParserInterface
         $description = $tags['twitter:description'];
         $image = $tags['twitter:image'];
 
-        return '<div class="grid md:grid-cols-4 rounded-sm shadow-sm bg-gray-200 my-5 px-4 gap-4">' .
+        return '<div class="grid md:grid-cols-4 rounded-md shadow-sm bg-gray-200 my-5 px-4 gap-4">' .
             '<div class="">' .
               '<a href="'. $tutorial_url . '"><img src="' . $image . '" alt="' . $title . '"></a>' .
             '</div>' .
             '<div class="md:col-span-3">' .
               '<p><span class="font-bold">' . $title . '</span><br>' .
-              '<span class="text-sm">' . $description . '</span></p>' .
+              '<span class="text-sm">' . $description . '...</span>' .
+              ' [<a href="#">read the full article</a>]</p>' .
             '</div>'.
             '</div>';
     }

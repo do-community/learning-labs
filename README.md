@@ -63,6 +63,13 @@ npm run dev
 ## Creating Content
 Content uses overall the same format of DEV.to posts, but the front matter is fluid and can be customized for your needs.
 
+All content should be organized into subdirectories inside `app/Resources/data`. The name of the subdirectory is used as content type, so right now we have:
+
+- `app/Resources/data/glossary` - glossary entries following the convention `name-of-term.md`. So the URL for these will be `/glossary/name-of-term`
+- `app/Resources/data/_p` - pages like "about".
+
+If you want to create a new content type, you just need to create a new directory there, and store your `.md` files for that content in there.
+
 ### Liquid Tags Currently Supported:
 
 - **DigitalOcean Tutorial (custom tag):**

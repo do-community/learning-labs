@@ -11,6 +11,7 @@ use Librarian\Provider\DevtoServiceProvider;
 use Librarian\Provider\LibrarianServiceProvider;
 use Librarian\Response;
 use App\Parser\TutorialTagParser;
+use App\Parser\UserTagParser;
 
 $app = new App(require __DIR__ . '/../config.php');
 
@@ -23,6 +24,7 @@ $app->addService('devto', new DevtoServiceProvider());
 $app->librarian->boot();
 
 $app->content->registerTagParser('tutorial', new TutorialTagParser());
+$app->content->registerTagParser('user', new UserTagParser());
 
 try {
     /** @var RouterServiceProvider $router */

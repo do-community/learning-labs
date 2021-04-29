@@ -5,10 +5,9 @@
         </a>
     {% endif %}
 
-    <h1 class="text-3xl lg:text-3xl my-4 text-gray-600 hover:text-blue-800">
+    <h1 class="text-3xl lg:text-4xl my-4 text-gray-600 hover:text-blue-800">
         <a href="{{ site_root() }}{{ content.getLink() }}" title="Read the full article: {{ content.frontMatterGet('title') }}">{{ content.frontMatterGet('title') ?? content.title }}</a>
     </h1>
-    <p class="text-md text-gray-500 mb-4">{{ content.getDate() }}</p>
     <article class="prose xl:prose-xl max-w-none mb-6">
         {% if full %}
             {{ content.body_html|raw }}
