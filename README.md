@@ -2,6 +2,8 @@
 LearningLabs is an experimental project created for Shark-a-Hack 2021-q1, the internal hackaton from DigitalOcean.
 This is a space for experimentation in alternative ways to present educational content we have in our community website.
 
+![Screenshot from 2021-04-29 15-14-19](https://user-images.githubusercontent.com/293241/116556419-b57d1d80-a8fd-11eb-9465-81d8af0ccfc2.png)
+
 LearningLabs is built with [Librarian](https://github.com/librarianphp/librarian).
 
 ## Installation
