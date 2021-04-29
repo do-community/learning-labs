@@ -1,0 +1,11 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 py-6">
+    {% for post in content_list %}
+        {% include '_partials/post.html.twig' with { 'content': post } %}
+    {% endfor %}
+    </div>
+    {% include '_partials/pagination.html.twig' with { 'url': site_root() } %}
+{% endblock%}
+
