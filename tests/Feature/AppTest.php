@@ -20,7 +20,7 @@ beforeEach(function () {
 });
 
 it('Boots the app and loads content', function () {
-    $content = $this->app->content->fetch('glossary/test0');
+    $content = $this->app->content->fetch('posts/test0');
     expect($content->frontMatterGet('title'))->toEqual("Devo Produzir Conteúdo em Português ou Inglês?");
     expect($content->body_markdown)->toBeString();
 });
