@@ -72,6 +72,16 @@ All content should be organized into subdirectories inside `app/Resources/data`.
 
 If you want to create a new content type, you just need to create a new directory there, and store your `.md` files for that content in there.
 
+### Contributing with the Audio Glossary
+
+The audio glossary is based on our [glossary](https://www.digitalocean.com/community/tags/glossary) tutorials. These are short tutorials explaining a concept. 
+You can contribute by recording the audio voice-over for a glossary item and sending a PR with:
+
+- audio in MP3 format named after the glossary term name (ex: `ansible.mp3`), placed on `web/audio`
+- new `.md` file named after the glossary term name (ex: `ansible.md`), placed on `data/glossary`
+
+You can use the `ansible` glossary entry as reference: [data/glossary/ansible.md](https://raw.githubusercontent.com/do-community/learning-labs/main/app/Resources/data/glossary/ansible.md) 
+
 ### Liquid Tags Currently Supported:
 
 - **DigitalOcean Tutorial (custom tag):**
