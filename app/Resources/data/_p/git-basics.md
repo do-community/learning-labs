@@ -30,6 +30,6 @@ If you're comfortable with Git, Github, and open source and want to share the lo
 
 And finally, to make your contributions shine, check out our **Tech Talk featuring tips for contributing to open source projects**: 
 
-{% youtube v=kP-rEaamgHM %}
+{% youtube kP-rEaamgHM %}
 
 Happy contributing! 
