@@ -1,6 +1,6 @@
 ---
 title: What is a Database?
-description: A database is a collection of structured information organized in a way that it can be easily accessed, managed, and updated by computer programs. Learn more about the DOM with our audible glossary!
+description: A database is a collection of structured information organized in a way that it can be easily accessed, managed, and updated by computer programs. Learn more about the databases with our audible glossary!
 tags: glossary, database, backend
 cover_image: https://community-cdn-digitalocean-com.global.ssl.fastly.net/variants/PcJyDaaLwTjkdriqXFpDajCM/035575f2985fe451d86e717d73691e533a1a00545d7230900ed786341dc3c882
 ---
