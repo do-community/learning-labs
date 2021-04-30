@@ -1,6 +1,6 @@
 ---
 title: What is an Operating System?
-description: An operating system is system software that handles computer memory, software and hardware resources, and processes, while providing common services and programming interfaces for computer programs. Learn more about the operating systems with our audible glossary!
+description: An operating system is system software that handles computer memory, software and hardware resources, and processes, while providing common services and programming interfaces for computer programs. Learn more about operating systems with our audible glossary!
 tags: glossary, OS, computer science
 cover_image: https://community-cdn-digitalocean-com.global.ssl.fastly.net/variants/PcJyDaaLwTjkdriqXFpDajCM/035575f2985fe451d86e717d73691e533a1a00545d7230900ed786341dc3c882
 ---
