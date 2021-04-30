@@ -9,29 +9,21 @@ return [
     # Librarian site Info
     # You should update this accordingly, and/or set up ENV vars with your preferred values.
     #########################################################################################
-    'site_name' => getenv('SITE_NAME') ?: 'Librarian',
+    'site_name' => getenv('SITE_NAME') ?: 'LearningLabs | DigitalOcean DevEd Team',
     'site_author' => getenv('SITE_AUTHOR') ?: 'librarian@example.com',
-    'site_description' => getenv('SITE_DESC') ?: 'Minimalist file-based CMS in PHP',
+    'site_description' => getenv('SITE_DESC') ?: 'A space for experimental and interactive learning',
     'site_url' => getenv('SITE_URL') ?: 'http://localhost:8000',
     'site_root' => getenv('SITE_ROOT') ?: '/',
-    'site_about' => getenv('SITE_ABOUT') ?: '_p/about',
+    'site_about' => getenv('SITE_ABOUT') ?: '_pages/about',
     'posts_per_page' => 10,
     'social_links' => [
         'Twitter' => getenv('LINK_TWITTER'),
-        'Github'  => getenv('LINK_GITHUB') ?: 'https://github.com/minicli/librarian',
+        'Github'  => getenv('LINK_GITHUB') ?: 'https://github.com/do-community/learning-labs',
         'YouTube' => getenv('LINK_YOUTUBE'),
         'LinkedIn' => getenv('LINK_LINKEDIN'),
         'Twitch' => getenv('LINK_TWITCH'),
     ],
     'app_debug' => getenv('APP_DEBUG') ?: true,
-
-    ##########################################################################################
-    # Dev.to Settings
-    # Set Up your dev.to username here or via ENV var.
-    # This is required if you want to import your glossary from the dev.to platform.
-    ##########################################################################################
-    'devto_username' => getenv('DEVTO_USER'),
-    'devto_datadir' =>  '_to',
 
     ###################################################
     # Other Settings
