@@ -2,7 +2,7 @@
 title: Git Basics for Beginners
 description: Are you new to learning Git and Github? Here's a list of interactive resources to help you get started! Find this and more interactive tutorials at LearningLabs.
 tags: guide, git, github
-cover_image: 
+cover_image: https://www.digitalocean.com/assets/community/illustrations/DigitalOcean_Community-e00e73a18df20667c3117725e727f3ade330204dff619ad8153050ded7341627.jpg
 ---
 
 {% user lmuldrow %}
