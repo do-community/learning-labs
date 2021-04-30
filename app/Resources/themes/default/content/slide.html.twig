@@ -1,0 +1,29 @@
+{% extends 'embed.html.twig' %}
+
+{% block content %}
+    <div class="bg-gray-50 block">
+        {% if current_page > 0 %}
+        <div class="flex flex-row py-4 px-4 float-right">
+        {% for i in 1..total_pages %}
+            <div class="order-first">
+                <a class="rounded-sm py-2 px-4 m-1 {% if current_page and current_page == i  %}bg-gray-400{% else %}bg-gray-200{% endif %} hover:bg-gray-300" href="{{ url }}?page={{ i }}">
+                    {{ loop.index }}
+                </a>
+            </div>
+            <div class="clear-both"></div>
+        {% endfor %}
+        </div>
+            {% else %}
+            <div class="p-4 bg-blue-600 text-white text-right text-lg">
+                <a href="?page=1">Start Guide <span class="px-4"><i class="far fa-play-circle animate-ping"></i></span></a>
+            </div>
+        {% endif %}
+    </div>
+    <div class="prose prose-lg max-w-none px-4 m-4">
+        {{ content.body_html|raw }}
+        {% if current_page > 0 and current_page < total_pages %}
+            <p class="text-right"><a href="?page={{ current_page + 1 }}">Next Step <span class="px-4"><i class="far fa-play-circle animate-ping"></i></span></a></p>
+        {% endif %}
+    </div>
+
+{% endblock %}

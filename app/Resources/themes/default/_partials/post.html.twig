@@ -1,11 +1,11 @@
-<div class="py-8 px-8 bg-gray-50">
-    {% if content.frontMatterHas('cover_image') %}
+<div class="p-5 bg-gray-50">
+    {% if not full and content.frontMatterHas('cover_image')%}
         <a href="{{ site_root() }}{{ content.getLink() }}" title="Read the full article: {{ content.frontMatterGet('title') }}">
             <img class="w-full rounded-md" src="{{ content.frontMatterGet('cover_image')|raw }}" alt="cover image">
         </a>
     {% endif %}
 
-    <h1 class="text-3xl lg:text-4xl my-4 text-gray-600 hover:text-blue-800">
+    <h1 class="text-3xl {% if full %} border-b-4 border-gray-600 pb-2 lg:text-4xl{% else %}lg:text-4xl{% endif%} my-4 text-gray-600 hover:text-gray-800">
         <a href="{{ site_root() }}{{ content.getLink() }}" title="Read the full article: {{ content.frontMatterGet('title') }}">{{ content.frontMatterGet('title') ?? content.title }}</a>
     </h1>
     <article class="prose xl:prose-xl max-w-none mb-6">

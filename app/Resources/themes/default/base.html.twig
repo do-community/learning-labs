@@ -16,7 +16,7 @@
 
 <body class="bg-gray-200">
 
-<div class="text-center bg-gray-50 py-3 shadow-sm mb-1">
+<div class="text-center bg-gray-50 py-3 border-b border-gray-300">
     <div class="container mx-auto">
         <div class="grid grid-cols-4 gap-6">
             <div class="pb-2 text-left px-2 col-span-3">
@@ -47,15 +47,8 @@
 </div>
 
 <div class="container mx-auto">
-    <div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
-        <div>
-            {% include '_partials/sidebar.html.twig' %}
-        </div>
-        <div class="lg:col-span-3">
-            {% block content %}
-            {% endblock %}
-        </div>
-    </div>
+    {% block content %}
+    {% endblock %}
 </div>
 
 {% include '_partials/footer.html.twig' %}

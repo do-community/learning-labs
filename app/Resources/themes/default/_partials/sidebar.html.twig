@@ -1,7 +1,7 @@
 <div class="px-4 py-6 bg-gray-50 shadow-sm h-full">
     <div class="py-4">
         <div class="text-center mx-auto">
-            <img class="mx-auto rounded-full" src="https://picsum.photos/seed/128/128">
+            <img class="mx-auto rounded-full" src="/images/sammy.svg">
             <h3 class="text-2xl my-2">About</h3>
         </div>
 
@@ -9,12 +9,19 @@
     </div>
 
     <div class="py-4">
-        <h3 class="text-2xl mb-6">Topics</h3>
-            <ul class="divide-y divide-gray-200 px-2">
-                {% for tag_name, posts in tag_list() %}
-                    <li class="py-2 px-2 hover:bg-gray-200"><a href="/tag/{{ tag_name }}">{{ tag_name }}</a></li>
-                {% endfor %}
-            </ul>
+        <h3 class="text-2xl mb-6">Content</h3>
+        <ul class="shadow-md rounded-md">
+            {% for type in content_types() %}
+                <li class="py-2 px-2 bg-blue-900 text-gray-100 font-bold{% if request_info().getRoute == type %} border-l-8 border-blue-300{% endif %}"><a href="/{{ type }}">{{ type|title|replace({'_': ' '}) }}</a></li>
+                <li>
+                    <ul class="divide-y divide-gray-200">
+                        {% for article in table_of_contents(type) %}
+                            <li class="py-2 px-2 pl-6 {% if request_info().getSlug == article.getSlug %} bg-gray-300 text-blue-900 font-bold{% else %} hover:bg-gray-100{% endif %}"><a href="{{ site_root() }}{{ article.getLink() }}">{{ article.frontMatterGet('title') }}</a></li>
+                        {% endfor %}
+                    </ul>
+                </li>
+            {% endfor %}
+        </ul>
     </div>
 
     <div class="py-4">

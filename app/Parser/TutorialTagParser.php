@@ -1,10 +1,7 @@
 <?php
 
-
 namespace App\Parser;
 
-use League\CommonMark\Block\Element\Paragraph;
-use Minicli\Curly\Client;
 use Parsed\CustomTagParserInterface;
 
 class TutorialTagParser implements CustomTagParserInterface

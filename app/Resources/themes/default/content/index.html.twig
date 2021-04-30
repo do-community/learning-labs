@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+
+{% block content %}
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-6">
+    <div>
+        {% include '_partials/sidebar.html.twig' %}
+    </div>
+    <div class="lg:col-span-3">
+
+        <h3 class="text-2xl md:text-4xl mt-6"><i class="fas fa-headphones"></i> <a href="/glossary" title="Check all content in Audio Glossary">Audio Glossary</a></h3>
+        <p>Learn on the go with our <a href="/glossary" title="Check all terms in our audio glossary">Audio Glossary</a>.</p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-6">
+                {% for post in glossary_items %}
+                    {% include '_partials/post.html.twig' with { 'content': post } %}
+                {% endfor %}
+            </div>
+
+        <h3 class="text-2xl md:text-4xl mt-6"><i class="fas fa-book-reader"></i> <a href="/guided" title="Check all content in Guided Learning">Guided Learning</a></h3>
+        <p>Our traditional guides, presented in new ways.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-6">
+            {% for post in guides %}
+                {% include '_partials/post.html.twig' with { 'content': post } %}
+            {% endfor %}
+        </div>
+
+        <h3 class="text-2xl md:text-4xl mt-6"><i class="fas fa-rocket"></i> <a href="/quickstarts" title="Check all content in Guided Learning">Quickstarts</a></h3>
+        <p>Want to get started but not quite sure where? Check our quickstart guides on various subjects.</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 py-6">
+            {% for post in quickstarts %}
+                {% include '_partials/post.html.twig' with { 'content': post } %}
+            {% endfor %}
+        </div>
+
+    </div>
+</div>
+{% endblock%}
+

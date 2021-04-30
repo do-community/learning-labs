@@ -26,15 +26,12 @@ class IndexController extends WebController
 
         /** @var ContentServiceProvider $content_provider */
         $content_provider = $this->getApp()->content;
-        $content_list = $content_provider->fetchAll($start, $this->getApp()->config->posts_per_page);
 
-        $output = $twig->render('content/listing.html.twig', [
-            'content_list'  => $content_list,
-            'total_pages' => $content_provider->fetchTotalPages($limit),
-            'current_page' => $page
-        ]);
-
-        $response = new Response($output);
+        $response = new Response($twig->render('content/index.html.twig', [
+            'glossary_items' => $content_provider->fetchFrom('glossary', 0, 2, false, 'rand'),
+            'guides' => $content_provider->fetchFrom('guided_learning', 0, 2, false, 'rand'),
+            'quickstarts' => $content_provider->fetchFrom('quickstarts', 0, 2, false, 'rand'),
+        ]));
 
         $response->output();
     }
