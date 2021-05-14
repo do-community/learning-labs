@@ -26,7 +26,7 @@ class DevToController extends CommandController
             if ($app_debug) {
                 $this->getPrinter()->error("ERROR: dev.to username not set.\n" .
                 "You must define a devto_username in your config file\n" .
-                "if you want to import glossary from that platform."
+                "if you want to import posts from that platform."
                 );
             }
             exit;

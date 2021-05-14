@@ -1,14 +1,14 @@
 ---
 title: About DevEd LearningLabs
-description: LearningLabs is an experimental project to present DO Community content in alternative ways, focusing on interactive learning.
+description: LearningLabs is an experimental project created to surface content from the DigitalOcean Community in alternative ways, focusing on interactive learning.
 tags: about
 cover_image: https://picsum.photos/780/300
 ---
 
-Your text content goes here.
+LearningLabs is an experimental project created to surface content from the DigitalOcean Community in alternative ways, focusing on interactive learning.
 
-You can have as many paragraphs as you want.
+This project is an initiative from the Developer Education team at DigitalOcean, created in our internal hackaton called _Shark-a-Hack_.
 
-Extended markdown is supported.
+LearningLabs is an open source project in PHP, built with [Librarian](https://librarianphp.dev). 
 
-{% audio test_cafe.mp3 %}
+The full codebase is available at https://github.com/do-community/learning-labs.

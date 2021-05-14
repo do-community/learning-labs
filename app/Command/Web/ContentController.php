@@ -31,9 +31,23 @@ class ContentController extends WebController
             $content = $content_provider->fetch($request->getRoute() . '/' . $request->getSlug());
 
             if ($content === null) {
-                $content_list = $content_provider->fetchFrom($request->getRoute());
+
+                $page = 1;
+                $limit = $this->getApp()->config->posts_per_page ?: 10;
+                $params = $this->getRequest()->getParams();
+
+                if (key_exists('page', $params)) {
+                    $page = $params['page'];
+                }
+
+                $start = ($page * $limit) - $limit;
+
+                $content_list = $content_provider->fetchFrom($request->getRoute(), $start, $this->getApp()->config->posts_per_page);
                 $response = new Response($twig->render('content/listing.html.twig', [
-                    'content_list' => $content_list
+                    'content_list' => $content_list,
+                    'total_pages' => $content_provider->fetchTotalPages($limit),
+                    'current_page' => $page,
+                    'base_url' => $request->getRoute()
                 ]));
 
                 $response->output();

@@ -1,5 +1,4 @@
 .idea
-config.php
 vendor/
 node_modules/
 .phpunit.result.cache

@@ -1,7 +1,7 @@
 <div class="px-4 py-6 bg-gray-50 shadow-sm h-full">
     <div class="py-4">
         <div class="text-center mx-auto">
-            <img class="mx-auto rounded-full" src="/images/sammy.svg">
+            <img class="mx-auto rounded-full" src="/img/sammy.svg">
             <h3 class="text-2xl my-2">About</h3>
         </div>
 
@@ -25,13 +25,15 @@
     </div>
 
     <div class="py-4">
-        <h3 class="text-2xl mb-6">Links</h3>
-            <ul class="menu-list">
-                {% for title,link in social_links() %}
-                    {%  if link %}<li><a href="{{ link }}" title="{{ title }}"><span class="icon"><i class="fab fa-{{ title|lower }}"></i></span> {{ title }}</a></li>{% endif %}
-                {% endfor %}
-            </ul>
+        <h3 class="text-2xl mb-6">Relevant Links</h3>
+        <ul class="menu-list">
+            <li><a href="https://github.com/do-community/learning-labs" title="GitHub Repository"><span class="icon"><i class="fab fa-github"></i></span> LearningLabs on GitHub</a></li>
+            <li><a href="https://digitalocean.com/community" title="DigitalOcean Community"><span class="icon"><i class="fas fa-users"></i></span> DigitalOcean Community</a></li>
+        </ul>
     </div>
 
+    <p class="text-center mt-20 px-6">
+        <img src="/img/DO_Powered_by_Badge_blue.png" alt="Powered by DigitalOcean App Platform"/>
+    </p>
 
 </div><!-- /.blog-sidebar -->

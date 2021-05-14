@@ -695,14 +695,6 @@ video {
   padding-left: 1em;
 }
 
-.prose blockquote p:first-of-type::before{
-  content: open-quote;
-}
-
-.prose blockquote p:last-of-type::after{
-  content: close-quote;
-}
-
 .prose h1{
   color: #111827;
   font-weight: 800;
@@ -749,14 +741,6 @@ video {
   color: #111827;
   font-weight: 600;
   font-size: 0.875em;
-}
-
-.prose code::before{
-  content: "`";
-}
-
-.prose code::after{
-  content: "`";
 }
 
 .prose a code{
@@ -33463,14 +33447,6 @@ pre[class*="language-"].line-numbers > code {
     padding-left: 1em;
   }
 
-  .sm\:prose blockquote p:first-of-type::before{
-    content: open-quote;
-  }
-
-  .sm\:prose blockquote p:last-of-type::after{
-    content: close-quote;
-  }
-
   .sm\:prose h1{
     color: #111827;
     font-weight: 800;
@@ -33517,14 +33493,6 @@ pre[class*="language-"].line-numbers > code {
     color: #111827;
     font-weight: 600;
     font-size: 0.875em;
-  }
-
-  .sm\:prose code::before{
-    content: "`";
-  }
-
-  .sm\:prose code::after{
-    content: "`";
   }
 
   .sm\:prose a code{
@@ -65893,14 +65861,6 @@ pre[class*="language-"].line-numbers > code {
     padding-left: 1em;
   }
 
-  .md\:prose blockquote p:first-of-type::before{
-    content: open-quote;
-  }
-
-  .md\:prose blockquote p:last-of-type::after{
-    content: close-quote;
-  }
-
   .md\:prose h1{
     color: #111827;
     font-weight: 800;
@@ -65947,14 +65907,6 @@ pre[class*="language-"].line-numbers > code {
     color: #111827;
     font-weight: 600;
     font-size: 0.875em;
-  }
-
-  .md\:prose code::before{
-    content: "`";
-  }
-
-  .md\:prose code::after{
-    content: "`";
   }
 
   .md\:prose a code{
@@ -98323,14 +98275,6 @@ pre[class*="language-"].line-numbers > code {
     padding-left: 1em;
   }
 
-  .lg\:prose blockquote p:first-of-type::before{
-    content: open-quote;
-  }
-
-  .lg\:prose blockquote p:last-of-type::after{
-    content: close-quote;
-  }
-
   .lg\:prose h1{
     color: #111827;
     font-weight: 800;
@@ -98377,14 +98321,6 @@ pre[class*="language-"].line-numbers > code {
     color: #111827;
     font-weight: 600;
     font-size: 0.875em;
-  }
-
-  .lg\:prose code::before{
-    content: "`";
-  }
-
-  .lg\:prose code::after{
-    content: "`";
   }
 
   .lg\:prose a code{
@@ -130753,14 +130689,6 @@ pre[class*="language-"].line-numbers > code {
     padding-left: 1em;
   }
 
-  .xl\:prose blockquote p:first-of-type::before{
-    content: open-quote;
-  }
-
-  .xl\:prose blockquote p:last-of-type::after{
-    content: close-quote;
-  }
-
   .xl\:prose h1{
     color: #111827;
     font-weight: 800;
@@ -130807,14 +130735,6 @@ pre[class*="language-"].line-numbers > code {
     color: #111827;
     font-weight: 600;
     font-size: 0.875em;
-  }
-
-  .xl\:prose code::before{
-    content: "`";
-  }
-
-  .xl\:prose code::after{
-    content: "`";
   }
 
   .xl\:prose a code{
@@ -163183,14 +163103,6 @@ pre[class*="language-"].line-numbers > code {
     padding-left: 1em;
   }
 
-  .\32xl\:prose blockquote p:first-of-type::before{
-    content: open-quote;
-  }
-
-  .\32xl\:prose blockquote p:last-of-type::after{
-    content: close-quote;
-  }
-
   .\32xl\:prose h1{
     color: #111827;
     font-weight: 800;
@@ -163237,14 +163149,6 @@ pre[class*="language-"].line-numbers > code {
     color: #111827;
     font-weight: 600;
     font-size: 0.875em;
-  }
-
-  .\32xl\:prose code::before{
-    content: "`";
-  }
-
-  .\32xl\:prose code::after{
-    content: "`";
   }
 
   .\32xl\:prose a code{
