@@ -32,7 +32,7 @@ class TutorialTagParser implements CustomTagParserInterface
             '<div class="md:col-span-3">' .
               '<p><span class="font-bold">' . $title . '</span><br>' .
               '<span class="text-sm">' . $description . '...</span>' .
-              ' [<a href="#">read the full article</a>]</p>' .
+              ' [<a href="' . $tutorial_url . '">read the full article</a>]</p>' .
             '</div>'.
             '</div>';
 
