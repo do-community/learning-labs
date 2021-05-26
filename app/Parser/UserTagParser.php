@@ -13,6 +13,6 @@ class UserTagParser implements CustomTagParserInterface
     {
         $profile_url = "https://www.digitalocean.com/community/users/" . $tag_value;
 
-        return '<a href="' . $profile_url . '" title="Visit ' . $tag_value . '\'s profile on DigitalOcean Community">@'. $tag_value . '</a>';
+        return 'by <a href="' . $profile_url . '" title="Visit ' . $tag_value . '\'s profile on DigitalOcean Community">@'. $tag_value . '</a>';
     }
 }

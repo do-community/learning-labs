@@ -1,5 +1,6 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}{{ content.frontMatterGet('title')}} - LearningLabs{% endblock %}
 {% block meta %}
     <meta name="author" content="{{ content.frontMatterGet('author') ?? '@digitalocean'  }}">
     <meta property="og:title" content="{{ content.frontMatterGet('title') }}">
